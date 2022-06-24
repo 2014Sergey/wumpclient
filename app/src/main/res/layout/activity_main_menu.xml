@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WumpTheme.LinearLayout"
+    tools:context=".MainMenuActivity"
+    android:windowActivityTransitions="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/findRoomButton"
+        style="@style/WumpTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onFindRoomButtonClick"
+        android:text="@string/find_room_button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createRoomButton"
+        style="@style/WumpTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCreateRoomButtonClick"
+        android:text="@string/create_room_button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signOutButton"
+        style="@style/WumpTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSignOutButtonClick"
+        android:text="@string/sign_out_button" />
+</LinearLayout>
